@@ -32,5 +32,6 @@ with open("timetest", encoding='utf-8', mode="w") as f:
     f.write(t3.strftime('%Y-%m-%d %H:%M:%S.%f'))
 t4 = t1 - t3
 print(type(t4))
-print(type(t4.seconds))
+print(t4)
+print(t4.total_seconds()//60)
 print(t4.seconds // 60)
