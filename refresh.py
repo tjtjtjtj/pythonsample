@@ -55,6 +55,8 @@ def get_fresh_query_result(redash_url, query_id, api_key, timeout):
 
 def write_result(status):
     # todo 処理を記載する
+    with open("redash_monitor_result.csv") as f:
+
 
 if __name__ == '__main__':
     # todo 引数化

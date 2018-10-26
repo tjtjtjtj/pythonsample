@@ -33,5 +33,5 @@ with open("timetest", encoding='utf-8', mode="w") as f:
 t4 = t1 - t3
 print(type(t4))
 print(t4)
-print(t4.total_seconds()//60)
+print(type(int(t4.total_seconds())))
 print(t4.seconds // 60)

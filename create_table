@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `test_tojo`.`i3redash_service_monitor_ext`(
+  `time` string
+  ,`available_time` int
+  ,`unavailable_time` int
+)
+ROW FORMAT SERDE
+  'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
+WITH SERDEPROPERTIES (
+  'field.delim'=',',
+  'line.delim'='\n',
+  'serialization.format'=',')
+STORED AS TEXTFILE
+;
